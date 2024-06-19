@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faHouse ,faUser,faDiagramProject,faFile} from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
   return (
-    <div className="flex flex-row  space-x-60  relative  items-center pl-9 py-9 bg-black ">
+    <div className="flex flex-row sticky top-0 space-x-60    items-center pl-9 py-9 bg-black ">
          <Link to="/">
          <h3 className="text-white hover:scale-110 duration-100  top-5  absolute">
             <FontAwesomeIcon icon={faHouse} />  Home</h3></Link>
@@ -18,6 +19,9 @@ const Navbar = () => {
         <Link to="/">
         <h3 className="text-white hover:scale-110 duration-100  top-5 absolute">
             <FontAwesomeIcon icon={faFile} /> Resume</h3></Link>
+            <Link to="/">
+        <h3 className="text-white hover:scale-110 duration-100  top-5 absolute">
+        <FontAwesomeIcon icon={faAddressBook} /> Contact me</h3></Link>  
         <Link to="https://github.com/kishore445/IMDB_Clone.git" target="_blank">
         <button className="text-white absolute top-5 right-20 "><FontAwesomeIcon icon={faGithub} /></button>
         </Link>
