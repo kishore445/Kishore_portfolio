@@ -10,7 +10,7 @@ const Navbar = () => {
          <Link to="/">
          <h3 className="text-white hover:scale-110 duration-100  top-5  absolute">
             <FontAwesomeIcon icon={faHouse} />  Home</h3></Link>
-        <Link to="/">
+        <Link to="/About">
         <h3 className="text-white hover:scale-110 duration-100    top-5 absolute">
             <FontAwesomeIcon icon={faUser} /> About</h3></Link>
         <Link to="/">
@@ -23,7 +23,7 @@ const Navbar = () => {
         <h3 className="text-white hover:scale-110 duration-100  top-5 absolute">
         <FontAwesomeIcon icon={faAddressBook} /> Contact me</h3></Link>  
         <Link to="https://github.com/kishore445/IMDB_Clone.git" target="_blank">
-        <button className="text-white absolute top-5 right-20 "><FontAwesomeIcon icon={faGithub} /></button>
+        <button className="text-white absolute top-5 right-20 text-2xl "><FontAwesomeIcon icon={faGithub} /></button>
         </Link>
      
         
