@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 const Resume = () => {
   return (
-    <div className=" md:h-[100vh]  bg-fixed text-white flex justify-center" style={{backgroundImage:`url(${image1})`}}>
-        <div className='flex justify-center items-center h-[500px] mt-20'>
+    <div className=" md:h-[100vh]  bg-fixed  flex justify-center" style={{backgroundImage:`url(${image1})`,backgroundSize: 'cover',}}>
+        <div className='flex  items-center h-[500px] mt-[150px] ml-[165px]'>
         
-        <a href="/Kishore_Tuggali.pdf" download="Resume.pdf"className='bg-slate-800 text-4xl rounded italic py-4 px-4'><h3><FontAwesomeIcon icon={faDownload} />  DownLoad Resume  </h3></a>
+        <a href="/Kishore_Tuggali.pdf" download="Resume.pdf"className='fixed rounded-xl text-blue-700 bg-cyan-300 text-2xl rounded italic py-4 px-4'><h3><FontAwesomeIcon icon={faDownload} />  DownLoad Resume  </h3></a>
         </div>
 
         
